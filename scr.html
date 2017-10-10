@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+
+<script type="text/javascript">
+	
+/*var a = 1 , sum = 0;
+
+for (var i = 1; i <= 10; i++) {
+	
+	sum = a + sum;
+	a = a + 1;
+
+}
+
+console.log(sum)
+
+var a = 3, sq = 1;
+
+for (var i = 0; i < 4; i++) {
+	//sq = sq * a;
+	sq *= a;
+
+}
+
+console.log(sq);*/
+
+
+var a = 1, b = 1; c = 0; sum = 0;
+
+//console.log(fibo_Element(7));
+summ = fibo_Element(8);
+console.log(summ);
+
+function fibo_Element(n) {	
+	for (var i = 3; i <= n; i++) {
+		c = a + b;
+		a = b;
+		b = c;
+	}
+return c;
+}
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
