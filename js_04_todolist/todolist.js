@@ -1,10 +1,11 @@
 btn_add.addEventListener("click", function() {
     if (chbox.checked) {
     var new_task = document.createElement("li");
+    new_task.className = "imp"
+    chbox.checked = "";
 }
 else {
     var new_task = document.createElement("li");
-    new_task.className = "imp"
 }
 
     if (task.value.length < 1) {

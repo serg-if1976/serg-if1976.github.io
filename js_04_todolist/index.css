@@ -5,4 +5,10 @@ body {
 
 .imp {
 	color: red;
+	background-color: lightblue;
+}
+
+li {
+	background-color: lightgrey;
+	width: 150px;
 }
