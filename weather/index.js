@@ -16,11 +16,11 @@
 
 			XHR.send();
 
-			XHR.onreadystatechandge = function() {
+			XHR.onreadystatechange = function() {
 				if ((XHR.readyState === 4) && (XHR.status === 200)) {
 					var data = JSON.parse(XHR.responseText);
 					console.log(data);
-					main.innerHTML = "<h1> Температура: " + (data.main.temp - 273.15) + "<sup>0<sup/>C</h1>";
+					main.innerHTML = "<h1> Температура: " + (data.main.temp - 273.15) + "<sup>0</sup/>C</h1>";
 					main.innerHTML += "<h1> Вологість: " + data.main.humidity + " %</h1>";
 					main.innerHTML += "<h1> Атм. тиск: " + (0.7500616827 * data.main.pressure).toFixed(2) + " мм. Рт. Ст.</h1>";
 				}
